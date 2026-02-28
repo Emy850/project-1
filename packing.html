@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACKING LIST</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand brand" href="#">Weather Explorer</a>
+            <ul class="navbar-nav me-auto ms-4">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link active text-primary" href="#">Packing List</a></li>
+            </ul>
+            <button class="btn btn-alert">Get Alerts</button>
+        </div>
+    </nav>
+    
+    <section class="hero-container">
+        <small>Trip Preparation</small>
+        <h1>Packing Essentials</h1>
+        <p>Based on your destination's forecast, we've curated a list of essentials. Add your own items to ensure you're fully prepared for the blue skies ahead</p>
+
+        <div class="search-box container col-lg-6">
+            <div class="input-group">
+                <input type="text" id="itemInput" class="form-control" placeholder="What else do you need? (e.g., Sunscreen, Passport...)">
+                <button class="btn btn-primary" onclick="addItem()">+ Add Item</button>
+            </div>
+        </div>
+    </section>
+
+    <!--PACKING LIST-->
+    <div class="container col-lg-6">
+        <div class="section-title">TO PACK (3)</div>
+        <div class="pack-item">
+            <div>
+                <input type="checkbox" class="form-check-input me-2">
+                Polarized Sunglasses
+            </div>
+            <span class="tag">personal</span>
+        </div>
+        <div class="pack-item">
+            <div>
+                <input type="checkbox" class="form-check-input me-2">
+                Power Bank
+            </div>
+            <span class="tag">essentials</span>
+        </div>
+        <div class="pack-item">
+            <div>
+                <input type="checkbox" class="form-check-input me-2">
+                Winter Jacket
+            </div>
+            <span class="tag">optional</span>
+        </div>   
+    </div>
+    <div class="section-title"> ALREADY PACKED (2) </div>
+    <div class="pack-item text-muted">
+        Travel-size Umbrella
+    </div>
+    <div class="pack-item text-muted">
+        Physical Maps of Destination
+    </div>
+
+    <!--WEATHER TIPS-->
+    <section class="container mt-5">
+        <div class="row g-4">
+            <img src="./image/hi 2.jpg" width="500" height="50%" alt="">
+            <div class="col-md-4">
+                <div class="tip-card">
+                    <h6>Sunny Days</h6>
+                    <p class="footer-small">Don't forget broad-spectrum sunscreen and a wide-brimmed hat to protect against UV rays</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tip-card">
+                    <h6>Rainy Outlook</h6>
+                    <p class="footer-small"> Pack a lightweight, packable raincoat and waterproof covers for electronics.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tip-card">
+                    <h6>Windy Peaks</h6>
+                    <p class="footer-small">Layering is key. A windproof outer shell keeps warmth without adding bulk</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="brand">Weather Explorer</h6>
+                    <p class="footer-small">Your daily companion for clear skies and accurate forecasts. Explore the world safely with rel-time weather </p>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-title">Explore</div>
+                    <a href="#"><p class="footer-small">Global Maps</p></a>
+                    <a href="#"><p class="footer-small">Radar Views</p></a>
+                    <a href="#"><p class="footer-small">Severe Weather</p></a>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title">Resources</div>
+                    <a href=""><p class="footer-small">Travel Guide</p></a>
+                    <a href=""><p class="footer-small">API Documentation</p></a>
+                    <a href=""><p class="footer-small">Help Center</p></a>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title">Connect</div>
+                    <a href="#"><i class="fa-brands fa-twitter"></i>Twitter </p></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center footer-small">
+                &copy;Designed By Buchis. All rights reserved.
+            
+            </p>
+
+        </div>
+    </footer>
+    <script src="./packing.js" defer></script>
+
+
+</body>
+</html>
